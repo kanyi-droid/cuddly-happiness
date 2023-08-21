@@ -83,7 +83,7 @@ require_once('sudo/assets/config/config.php');
                                 <a href="staff/pages_staff_index.php">Staff Login</a>
                             </li> -->
                             <li>
-                                <a href="sudo/pages_sudo_index.php">Admin Login</a>
+                                <a href="sudo/pages_sudo_index.php">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -174,7 +174,7 @@ require_once('sudo/assets/config/config.php');
                         </ul>
                     </div>
                     <div class="space-30"></div>
-                    <p>Most popular book categories to get your learning started</p>
+                    <p>Most popular book categories to get your reading started</p>
                 </div>
             </div>
             <div class="space-60"></div>

@@ -83,7 +83,7 @@ require_once('sudo/assets/config/config.php');
                 <div class="row wow fadeInUp">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
                         <div class="jumbotron">
-                            <h1 class="text-white">Choose Your Book and Proceed To Read It</h1>
+                            <h1 class="text-white">"Dive into Pages Uncharted: Where Imagination Meets Words"</h1>
                         </div>
                         <div class="title-bar white">
                             <ul class="list-inline list-unstyled">
@@ -144,7 +144,14 @@ require_once('sudo/assets/config/config.php');
 
                         /* Attempt MySQL server connection. Assuming you are running MySQL
                         server with default setting (user 'root' with no password) */
-                        $link = mysqli_connect("localhost", "root", "", "elibrary");
+                        $DB_host = "localhost";
+                        $DB_user = "root";
+                        $DB_pass = "";
+                        $DB_name = "elibrary";
+                        $link = mysqli_connect($DB_host, $DB_user, $DB_pass, $DB_name); 
+
+                       
+
 
                         // Check connection
                         if ($link === false) {
@@ -231,9 +238,8 @@ require_once('sudo/assets/config/config.php');
                             <ul class="list-unstyled menu-tip">
                                 <?php
 
- 
-                                $link = mysqli_connect("localhost", "root", "", "elibrary");
 
+$link = mysqli_connect($DB_host, $DB_user, $DB_pass, $DB_name); 
                                 // Check connection
                                 if ($link === false) {
                                     die("ERROR: Could not connect. " . mysqli_connect_error());
